@@ -1,0 +1,395 @@
+.home-cards {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card-title {
+  margin-top: auto;
+}
+
+.card-mini-title {
+  margin-bottom: auto;
+  color: aquamarine;
+}
+
+/* Profile Card */
+
+.profile-card {
+  background-color: rgba(0, 20, 170, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px aliceblue;
+  padding: 20px;
+  margin: 10px;
+  margin-top: 45px;
+  text-align: center;
+  position: sticky;
+  width: 245px; 
+  height: fit-content;
+  z-index: 2;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  font-family: "Google Sans Code", monospace;
+  font-style: normal;
+}
+
+.profile-card .card-image {
+  width: 100%;
+  height: auto;
+  border-radius:8px 8px;
+  margin-bottom: 15px;
+}
+
+.card-name {
+  display: flex;
+  text-align: center;
+  color: aquamarine;
+}
+
+.profile-card .card-title {
+  margin: auto;
+}
+
+.profile-card input {
+  background-color: rgba(0, 20, 170, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px aliceblue;
+  padding: 20px;
+  max-width: 75%;
+  z-index: 2;
+  position: relative;
+  color:aquamarine;
+  font-family: "Google Sans Code", monospace;
+  font-style: normal;
+  text-wrap: balance;
+}
+
+.card-image-input {
+  margin-top: -0.5vh;
+  margin-bottom: 3.4vh;
+}
+
+.card-title-input {
+  margin-top: 0.5vh;
+  font-size: large;
+}
+
+.card-text-input {
+  background-color: rgba(0, 20, 170, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px aliceblue;
+  padding: 20px;
+  max-width: 75%;
+  margin-top: 40px;
+  z-index: 2;
+  position: relative;
+  color:aquamarine;
+  font-family: "Google Sans Code", monospace;
+  font-style: normal;
+  text-wrap: balance;
+  min-height: 28vh;
+  resize: vertical;
+}
+
+.save-button {
+  background-color: rgba(0, 20, 170, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px aliceblue;
+  padding: 1vh;
+  max-width: 75%;
+  margin-top: 2vh;
+  z-index: 2;
+  position: relative;
+  color: white;
+  font-family: "Google Sans Code", monospace;
+  font-style: normal;
+  text-wrap: balance;
+  cursor: pointer;
+}
+
+/* Education Card */
+
+.education-card {
+  background-color: rgba(0, 20, 170, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px aliceblue;
+  padding: 20px;
+  max-width: 70%; /* Controls when wrapping starts */
+  margin-top: 50px;
+  z-index: 2;
+  position: relative;
+  color: white;
+  font-family: "Google Sans Code", monospace;
+  font-style: normal;
+  text-wrap: balance;
+}
+
+.year {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.year .modules {
+  flex: 1 1 calc(33.333%);
+  min-width: 200px;
+  box-sizing: border-box;
+  padding-bottom: 10px; 
+  border-radius: 10px;
+}
+
+.modules:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px aquamarine;
+  background-color: rgba(0, 20, 170, 0.5);
+}
+
+/* Experience Card */
+
+.experience-card {
+  background-color: rgba(0, 20, 170, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px aliceblue;
+  padding: 20px;
+  max-width: 75%; /* Controls when wrapping starts */
+  margin-top: 50px;
+  z-index: 2;
+  position: relative;
+  color: white;
+  font-family: "Google Sans Code", monospace;
+  font-style: normal;
+  text-wrap: balance;
+  flex-wrap: wrap;
+}
+
+.job-card {
+  flex: 1 1 calc(33.333% - 1rem);
+  background: rgba(0, 20, 170, 0.5);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px aliceblue;
+  padding: 20px;
+}
+
+.experience-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-card .CS-duties {
+  margin-bottom: -2%;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px aquamarine;
+}
+
+/* Projects Card */
+
+.projects-card {
+  background-color: rgba(0, 20, 170, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px aliceblue;
+  padding: 20px;
+  max-width: 75%; /* Controls when wrapping starts */
+  margin-top: 50px;
+  z-index: 2;
+  position: relative;
+  color: white;
+  font-family: "Google Sans Code", monospace;
+  font-style: normal;
+  text-wrap: balance;
+}
+
+.project-card {
+  flex: 1 1 calc(33.333% - 1rem);
+  background: rgba(0, 20, 170, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px aliceblue;
+}
+
+.card-header {
+  margin-top: -20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px aquamarine;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-duties {
+  margin-bottom: -1.5%;
+}
+
+/* Certifications Card */
+
+.certifications-card {
+  background-color: rgba(0, 20, 170, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px aliceblue;
+  padding: 20px;
+  padding-bottom: 8vh;
+  max-width: 75%; 
+  margin-top: 50px;
+  height: fit-content;
+  position: relative;
+  color: white;
+  font-family: "Google Sans Code", monospace;
+  font-style: normal;
+  text-wrap: balance;
+  flex-wrap: wrap;
+}
+
+.certification-card {
+  flex: 1 1 calc(33.333% - 1rem);
+  background: rgba(0, 20, 170, 0.5);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px aliceblue;
+  padding: 20px;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px aquamarine;
+}
+
+.certification-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+}
+/* Responsive Adjustments */
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .home-cards {
+    flex-direction: column;
+  }
+
+  .profile-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card-name {
+    font-size: 13px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    top: 28%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-surname {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .profile-card .card-image {
+    width: 50%;
+  }
+
+  .profile-card .card-title {
+    margin: auto;
+  }
+
+  .card-image-input {
+    margin-top: -0.5vh;
+    margin-bottom: 3.4vh;
+  }
+
+  .card-title-input {
+    margin-top: 0.5vh;
+    font-size: large;
+  }
+
+  .save-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .education-card {
+    max-width: 85%;
+  }
+
+  .year {
+    margin-left: -2rem;
+  }
+
+  .experience-card {
+    max-width: 85%
+  }
+
+  .duties {
+    margin-left: -2rem;
+  }
+
+  .experience-card .CS-duties {
+    margin-bottom: -2%;
+  }
+
+  .projects-card {
+    max-width: 85%;
+  }
+
+  .project-card {
+    padding-top: 1px;
+  }
+  
+  .card-header {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .certifications-card {
+    max-width: 85%;
+    padding-bottom: 6vh;
+  }
+
+  .certification-card {
+    padding: 20px;
+    padding-top: 1px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .home-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .profile-card {
+    max-width: 280px;
+  }
+
+  .education-card,
+  .experience-card,
+  .projects-card,
+  .certifications-card {
+    max-width: 90%;
+  }
+}

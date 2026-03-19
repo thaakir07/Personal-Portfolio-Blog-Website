@@ -1,0 +1,103 @@
+.nav-bar button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Google Sans Code", monospace;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Select option styling */
+.header .nav-bar select {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-bar .profile-button,
+.nav-bar .more-button {
+  display: flex;
+}
+
+.nav-bar button:hover {
+  color:aquamarine;
+}
+
+.nav-bar button::after {
+  color:aquamarine;
+}
+
+
+/* Responsive Adjustments */
+
+/* Mobile first */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .nav-bar button, .nav-bar select {
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
+  .header .nav-bar select {
+    color: white;
+    width: 5%
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .nav-bar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-bar button, .nav-bar select {
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .header {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .header .nav-bar {
+    display: flex;
+    font-size: large;
+    align-items: center;
+    margin-top: -3rem;
+  }
+
+  .header .nav-bar select {
+    width: 1.3rem;
+  }
+
+  .nav-bar button {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .nav-bar .more-button button,
+  .nav-bar .profile-button button {
+    padding-right: 0px;
+    cursor: default;
+  }
+
+  .nav-bar .profile-button {
+    padding-right: 15px;
+  }
+}
